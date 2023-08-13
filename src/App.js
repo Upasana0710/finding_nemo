@@ -1,13 +1,14 @@
-import './Components/FoundCard';
-import FoundPage from './pages/FoundPage';
-import HomePage from './pages/HomePage'
-import './App.css'
+import FoundPage from "./pages/FoundPage";
+// import HomePage from "./pages/HomePage";
+import LostPage from "./pages/LostPage";
+import "./App.css";
+
 function App() {
   return (
-    <div className="screen">
-      <HomePage/>
-      {/* <FoundPage/> */}
-
+    <div>
+      {/* <HomePage /> */}
+      <LostPage />
+      {/* <FoundPage /> */}
     </div>
   );
 }
