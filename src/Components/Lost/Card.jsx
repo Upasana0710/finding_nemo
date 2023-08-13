@@ -1,7 +1,6 @@
 import React from "react";
-import "../styles/LostCard.css";
-import upload from "../assets/gallery.png";
-import logo from "../assets/logo.jpg";
+import "../../styles/Lost/Card.css";
+import upload from "../../assets/gallery.png";
 import CloseIcon from "@mui/icons-material/Close";
 
 const LostCard = (props) => {
@@ -17,7 +16,6 @@ const LostCard = (props) => {
         </div>
         <div className="divider"></div>
         <div className="details">
-          <img src={logo} alt="logo" width={100} />
           <form
             className="formSubmit"
             method="POST"
