@@ -14,7 +14,7 @@ const FoundCard = () => {
         <button className="upload_btn">Upload Image</button>
       </div>
       <div className="FoundDetails">
-        <img src={logo} width="100px" alt="logo" />
+        <p>Enter the details of the found item! </p>
         <form method="POST" className="form1">
           <input className="name" name="Finder_name" placeholder="Your name" />
           <input
@@ -23,14 +23,23 @@ const FoundCard = () => {
             name="finder_phno"
             placeholder="Contact number"
           />
+
+          <input
+            type="text"
+            className="item_description"
+            name="finder_email"
+            placeholder="Email"
+          />
+
+
           <div className="found_location">
             <input
               type="text"
               className="location"
               name="spot_location"
-              placeholder="Where was the item found ? "
+              placeholder="Location ? "
             />
-            <LocationOnIcon />
+            <LocationOnIcon className="licon"/>
           </div>
 
           <input

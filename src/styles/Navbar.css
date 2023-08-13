@@ -6,7 +6,7 @@
     justify-content: flex-end;
     position: absolute;
     top: 30px;
-   
+    font-size: 90%;
     
     
 }
@@ -21,8 +21,14 @@
     color: black;
     padding: 0;
     margin: 0;
-   
 }
+
+
+.Nav_items > a:hover
+{
+    color: #019aff;
+}
+
 
 .Nav_items:hover{
     color: #019aff;
@@ -32,4 +38,13 @@
 .di
 {
     width: 200px;
+    color: black;
+}
+
+@media only screen and (max-width: 850px) 
+{
+    .NavBar
+    {
+        justify-content: center;
+    }
 }

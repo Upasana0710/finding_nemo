@@ -68,7 +68,7 @@
 .ph_no,
 .location,
 .item_description {
-  height: 14%;
+  height: 35%;
   margin-bottom: 20px;
   width: 90%;
   border-radius: 6px;
@@ -88,9 +88,13 @@
   width: 92%;
   border-radius: 6px;
   border: transparent;
-  background-color: rgba(228, 225, 225, 0.466);
+  background-color: rgba(228, 225, 225, 0.712);
   margin-bottom: 20px;
-  height: 14%;
+  height: 25%;
+}
+.FoundDetails > p{
+  font-size: 70%;
+  margin:0;
 }
 .upload_btn,
 .FoundSubmit {
@@ -101,6 +105,8 @@
   color: white;
   font-weight: bold;
   border: transparent;
+  font-size: 90%;
+  word-wrap: break-word;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
@@ -127,4 +133,43 @@
   align-items: center;
   margin: 20px;
   width: 90%;
+}
+
+
+.FoundContainer
+{
+  min-width: 226px;
+  min-height: 480px;
+}
+
+@media only screen and (max-width: 850px) {
+ .FoundContainer
+ {
+  flex-direction: column;
+ }
+
+ .FoundImg
+ {
+  height:30%;
+  width: 100%;
+  position: relative;
+  top:40px
+ }
+
+ .FoundDetails
+ {
+  width:100%;
+  height: 70%;
+ }
+
+ .FoundDetails > img
+{
+ display: none;
+}
+.FoundSubmit
+{
+  position: relative;
+  bottom: 10px;
+}
+
 }

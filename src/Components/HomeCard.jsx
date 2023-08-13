@@ -8,10 +8,10 @@ const HomeCard = () => {
   return (
     <div className="HomeCard">
     <div className="Cardimg">
-        <img src={img} width="400px" />
+        <img src={img} width="60%" />
     </div>
       <div className="Cardb">
-      <img src={logo} width="100px" />
+      <img src={logo} width="30%" />
         <div className="hbtn">
         <Link to="/Founditems" style={{ textDecoration: 'none' }}><Button button="Item Found" /></Link>
         <Link to="/Lostitems" style={{ textDecoration: 'none' }}><Button button="Items Lost" /></Link>
