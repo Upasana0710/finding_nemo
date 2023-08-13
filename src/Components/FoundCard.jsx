@@ -2,22 +2,21 @@ import React from "react";
 import "../styles/FoundCard.css";
 import upload from "../assets/gallery.png";
 import logo from "../assets/logo.jpg";
-import LocationOnIcon from '@mui/icons-material/LocationOn';
+import LocationOnIcon from "@mui/icons-material/LocationOn";
 
 const FoundCard = () => {
   return (
     <div className="FoundContainer">
       <div className="FoundImg">
         <div className="upload">
-          <img src={upload} />
+          <img src={upload} alt="upload_icon" />
         </div>
         <button className="upload_btn">Upload Image</button>
       </div>
       <div className="FoundDetails">
-        <img src={logo} width="100px" />
+        <img src={logo} width="100px" alt="logo" />
         <form method="POST" className="form1">
           <input className="name" name="Finder_name" placeholder="Your name" />
-
           <input
             type="number"
             className="ph_no"
@@ -25,15 +24,15 @@ const FoundCard = () => {
             placeholder="Contact number"
           />
           <div className="found_location">
-          <input
-            type="text"
-            className="location"
-            name="spot_location"
-            placeholder="Where was the item found ? "
-          />
-          <LocationOnIcon/>
+            <input
+              type="text"
+              className="location"
+              name="spot_location"
+              placeholder="Where was the item found ? "
+            />
+            <LocationOnIcon />
           </div>
-          
+
           <input
             type="text"
             className="item_description"
