@@ -53,6 +53,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color:#e7f7ff;
 }
 
 @keyframes visibility {
@@ -86,14 +87,24 @@
     align-items: center;
     justify-content: center;
 }
-
+.Cardb
+{
+  align-items: first baseline;
+}
 .hbtn
 {
     display: flex;
     margin-top: 20px;
+    padding-left: 0;
 }
 
 .Cardimg
 {
     border-right: 1px solid grey;
 }
+
+.Cardb > img
+{
+ margin-left: 20px;
+}
+
