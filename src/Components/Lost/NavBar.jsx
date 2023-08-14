@@ -1,24 +1,23 @@
 import React from "react";
-import "../styles/LostNavbar.css";
+import "../../styles/Lost/NavBar.css";
+import { Link } from "react-router-dom";
 
 const NavigationBar = (props) => {
   return (
     <div className="navBar">
-      <div
-        onClick={() => (window.location.href = "/")}
-        className="cursor-pointer"
-      >
+      <Link to="/" className="cursor-pointer title">
         {props.data.title}
-      </div>
+      </Link>
       <div>
         <div
-          className="color-blue cursor-pointer"
+          className="color-blue cursor-pointer navItem"
           onClick={() => props.updateItemLost()}
         >
           {props.data.uno}
         </div>
         <div
-          className="color-blue cursor-pointer"
+          className="color-blue cursor-pointer navItem
+        "
           onClick={() =>
             (window.location.href = "mailto:iampriyanshukumar.2003@gmail.com")
           }
