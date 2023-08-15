@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/NavBar.css";
 import { Link } from "react-router-dom";
 import BookmarkAddedIcon from '@mui/icons-material/BookmarkAdded';
+import { Tooltip } from "@mui/material";
 
 const NavBar = (props) => {
   return (
@@ -39,7 +40,8 @@ const NavBar = (props) => {
         >
           {props.data.dos}
         </div>
-        <BookmarkAddedIcon className="color-blue cursor-pointer"/>
+        <Tooltip title="Claimed items " arrow>
+        <Link to="/ClaimedItems" style={{ textDecoration: 'none' }}><BookmarkAddedIcon className="color-blue cursor-pointer navItem"/></Link></Tooltip>
       </div>
     </div>
   );
