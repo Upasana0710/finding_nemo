@@ -4,9 +4,8 @@ import "./Components/FoundCard";
 import FoundPage from "./pages/FoundPage";
 import LostPage from "./pages/LostPage";
 import HomePage from "./pages/HomePage";
-import "./App.css";
 import ClaimedItems from "./pages/ClaimedItems";
-
+import "./App.css";
 function App() {
   return (
     <div className="screen">
