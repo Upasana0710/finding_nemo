@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/NavBar.css";
 import { Link } from "react-router-dom";
+import BookmarkAddedIcon from '@mui/icons-material/BookmarkAdded';
 
 const NavBar = (props) => {
   return (
@@ -38,6 +39,7 @@ const NavBar = (props) => {
         >
           {props.data.dos}
         </div>
+        <BookmarkAddedIcon className="color-blue cursor-pointer"/>
       </div>
     </div>
   );

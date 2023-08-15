@@ -10,7 +10,7 @@ const LostPage = () => {
     title: "Finding Nemo",
     uno: "Lost Something ?",
     dos: "Contact Us",
-    tres:"Found Something ?"
+    tres:"Found Something ?",
   };
   const [lostState, setLostState] = useState(false);
   const updateItemLost = () => {
