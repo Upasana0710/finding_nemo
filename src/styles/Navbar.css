@@ -1,50 +1,29 @@
-.NavBar
-{
-    height:40px;
-    width: 100vw;
+.navBar {
     display: flex;
-    justify-content: flex-end;
-    position: absolute;
-    top: 30px;
-    font-size: 90%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     
-    
-}
-
-.Nav_items
-{
-   margin-right: 5%;
-
-}
-.Nav_items > a{
-    text-decoration: none;
-    color: black;
-    padding: 0;
-    margin: 0;
-}
-
-
-.Nav_items > a:hover
-{
+  }
+  
+  .navBar > div:nth-child(2) {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    font-size: 90%; 
+   
+  }
+  
+  .color-blue:hover {
     color: #019aff;
-}
-
-
-.Nav_items:hover{
-    color: #019aff;
+  }
+  
+  .cursor-pointer {
     cursor: pointer;
-}
-
-.di
-{
-    width: 200px;
+  }
+  .navItem {
+    cursor: pointer;
     color: black;
-}
-
-@media only screen and (max-width: 850px) 
-{
-    .NavBar
-    {
-        justify-content: center;
-    }
-}
+  }
+  

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import Card from "../Components/Lost/Card";
-import NavBar from "../Components/Lost/NavBar";
+import NavBar from "../Components/NavBar";
 import ListItem from "../Components/Lost/ListItem";
 import "../styles/Lost/Card.css";
 
@@ -10,6 +10,7 @@ const LostPage = () => {
     title: "App Name",
     uno: "Lost Something ?",
     dos: "Contact Us",
+    tres:"Found Something ?"
   };
   const [lostState, setLostState] = useState(false);
   const updateItemLost = () => {

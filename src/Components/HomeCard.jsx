@@ -8,12 +8,13 @@ const HomeCard = () => {
   return (
     <div className="HomeCard">
     <div className="Cardimg">
-        <img src={img} width="100%" draggable="false"/>
+        <img src={img} width="100%" draggable="false" alt="Card"/>
     </div>
       <div className="Cardb">
-      <img src={logo} width="100%" draggable="false" />
+      <img src={logo} width="100%" draggable="false" alt="Card "/>
         <div className="hbtn">
-        <Link to="/Lostitems" style={{ textDecoration: 'none' }}><Button button="Embark on the journey!" className="homeButton"/></Link>
+        <Link to="/Lostitems" style={{ textDecoration: 'none' }}>
+          <Button button="Let's get started!" className="homeButton"/></Link>
         </div>
       </div>
     </div>

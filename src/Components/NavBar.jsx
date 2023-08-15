@@ -1,14 +1,29 @@
 import React from "react";
-import "../../styles/Lost/NavBar.css";
+import "../styles/NavBar.css";
 import { Link } from "react-router-dom";
 
-const NavigationBar = (props) => {
+const NavBar = (props) => {
   return (
     <div className="navBar">
-      <Link to="/" className="cursor-pointer title">
+      <Link
+        to="/"
+        className="cursor-pointer title "
+        style={{ textDecoration: "none" }}
+      >
         {props.data.title}
       </Link>
       <div>
+
+      <Link
+        to="/Founditems"
+        className="cursor-pointer title "
+        style={{ textDecoration: "none" }}
+      >
+        <div
+          className="color-blue cursor-pointer navItem"
+        >
+          {props.data.tres}
+        </div></Link>
         <div
           className="color-blue cursor-pointer navItem"
           onClick={() => props.updateItemLost()}
@@ -16,8 +31,7 @@ const NavigationBar = (props) => {
           {props.data.uno}
         </div>
         <div
-          className="color-blue cursor-pointer navItem
-        "
+          className="color-blue cursor-pointer navItem"
           onClick={() =>
             (window.location.href = "mailto:iampriyanshukumar.2003@gmail.com")
           }
@@ -29,4 +43,4 @@ const NavigationBar = (props) => {
   );
 };
 
-export default NavigationBar;
+export default NavBar;
