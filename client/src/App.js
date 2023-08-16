@@ -13,9 +13,9 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="Founditems" element={<FoundPage />} />
-          <Route path="Lostitems" element={<LostPage />} />
-          <Route path="Claimeditems" element={<ClaimedItems />} />
+          <Route path="found" element={<FoundPage />} />
+          <Route path="lost" element={<LostPage />} />
+          <Route path="claimed" element={<ClaimedItems />} />
         </Routes>
       </Router>
     </div>

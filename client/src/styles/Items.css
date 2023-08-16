@@ -1,0 +1,51 @@
+.test {
+  border: 1px solid blueviolet;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  padding: 20px 20px;
+}
+
+.itemContainer {
+  overflow: hidden;
+  width: 60%;
+  height: 300px;
+  margin: 20px;
+  border-radius: 15px;
+  border: 1px solid rgb(220, 220, 220);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+.innerContainer {
+  border-left: 1px solid rgb(180, 180, 180);
+  height: 100%;
+  padding: 20px 0 0 20px;
+  width: 100%;
+}
+.innerContainer > div:nth-child(1) {
+  font-weight: 900;
+  font-size: xx-large;
+}
+
+.innerContainer > div:nth-child(2) {
+  font-weight: 600;
+  font-size: large;
+}
+
+.itemFound {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.itemFound > button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+}
