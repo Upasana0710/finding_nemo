@@ -1,4 +1,3 @@
-
 @keyframes animateWave {
   0% {
     transform: scale(1, 0);
@@ -22,7 +21,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color:#e7f7ff;
+  background-color: #e7f7ff;
 }
 
 @keyframes visibility {
@@ -35,7 +34,7 @@
 }
 
 .homeContainer {
-  box-shadow: rgba(118, 118, 118, 0.888) 0px 7px 29px 0px;
+  box-shadow: 5px 9px 24px 10px rgba(0, 0, 0, 0.1);
   background-color: rgba(255, 255, 255, 0.673);
   height: 70%;
   border-radius: 20px;
@@ -45,34 +44,37 @@
   display: flex;
   animation: visibility 1000ms forwards;
   align-items: center;
- justify-content: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
 }
 
-.homeContainer_right,.homeContainer_left
-{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.homeContainer_right,
+.homeContainer_left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.homeContainer_right
-{
+
+.homeContainer_right {
   align-items: first baseline;
-}
-.button
-{
-    display: flex;
-    margin-top: 20px;
-    padding-left: 0;
+  height: 100%;
 }
 
-.homeContainer_left
-{
-    border-right: 1px solid grey;
+.homeContainer_right > img:nth-child(2) {
+  margin: 0 0 25px 0;
+}
+.button {
+  display: flex;
+  margin-top: 20px;
+  padding-left: 0;
 }
 
-.homeContainer_right > img
-{
- margin-left: 20px;
+.homeContainer_left {
+  border-right: 1px solid grey;
+}
+
+.homeContainer_right > img {
+  margin-left: 20px;
 }

@@ -1,0 +1,31 @@
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.navBar > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  font-size: 90%;
+}
+.title {
+  font-weight: bold;
+  font-size: x-large;
+  color: #019aff;
+}
+.color-blue:hover {
+  color: #019aff;
+}
+
+.cursor-pointer {
+  text-decoration: none;
+  cursor: pointer;
+}
+.navItem {
+  cursor: pointer;
+  color: black;
+}
