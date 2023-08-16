@@ -88,9 +88,10 @@
   width: 92%;
   border-radius: 6px;
   border: transparent;
-  background-color: rgba(228, 225, 225, 0.712);
+  background-color: rgba(26, 2, 2, 0.712);
   margin-bottom: 20px;
-  height: 25%;
+  padding: 0;
+  height: 20%;
 }
 .FoundDetails > p{
   font-size: 70%;

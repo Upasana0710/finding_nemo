@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/NavBar.css";
+import "../styles/Navbar.css"
 import { Link } from "react-router-dom";
 import BookmarkAddedIcon from '@mui/icons-material/BookmarkAdded';
 import { Tooltip } from "@mui/material";

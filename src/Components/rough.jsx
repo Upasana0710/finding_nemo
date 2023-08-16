@@ -1,13 +1,8 @@
-import React from "react";
-import "../styles/FoundCard.css";
-import upload from "../assets/gallery.png";
-import CloseIcon from "@mui/icons-material/Close";
+import React from 'react'
 
-
-const FoundCard = () => {
+const rough = () => {
   return (
     <div className="FoundContainer">
-      
       <div className="FoundImg">
         <div className="upload">
           <img src={upload} alt="upload_icon" />
@@ -32,12 +27,16 @@ const FoundCard = () => {
             placeholder="Email"
           />
 
-          <input
-            type="text"
-            className="inputField location"
-            name="spot_location"
-            placeholder="Location ? "
-          />
+
+          <div className="found_location">
+            <input
+              type="text"
+              className="inputField location"
+              name="spot_location"
+              placeholder="Location ? "
+            />
+            <LocationOnIcon className="licon"/>
+          </div>
 
           <input
             type="text"
@@ -50,7 +49,7 @@ const FoundCard = () => {
         </form>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default FoundCard;
+export default rough
