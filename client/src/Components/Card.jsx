@@ -20,6 +20,7 @@ const Card = (props) => {
         <div className="closeIcon" onClick={() => props.updateItemLost()}>
           <CloseIcon />
         </div>
+
         <div className="uploadImg">
           <div></div>
           <img src={selectedFile} alt="logo" width={100} />
