@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/Lost/Items.css";
+import "../styles/Items.css";
 import Item from "./Item";
 
 const ListLostItems = () => {

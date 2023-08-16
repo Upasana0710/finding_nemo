@@ -1,12 +1,8 @@
-import React from 'react';
-import NavBar  from '../Components/NavBar';
+import React from "react";
+import NavBar from "../Components/NavBar";
 
 const ClaimedItems = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+  return <div></div>;
+};
 
-export default ClaimedItems
+export default ClaimedItems;
