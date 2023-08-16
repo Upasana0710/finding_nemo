@@ -7,10 +7,10 @@ import "../styles/Lost/Card.css";
 
 const LostPage = () => {
   const NavData = {
-    title: "App Name",
+    title: "Finding Nemo",
     uno: "Lost Something ?",
     dos: "Contact Us",
-    tres:"Found Something ?"
+    tres:"Found Something ?",
   };
   const [lostState, setLostState] = useState(false);
   const updateItemLost = () => {
