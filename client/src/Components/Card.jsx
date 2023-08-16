@@ -7,8 +7,10 @@ import DescriptionIcon from "@mui/icons-material/Description";
 import EmailIcon from "@mui/icons-material/Email";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import "../styles/Card.css";
+import { useLocation } from "react-router-dom";
 
 const Card = (props) => {
+  const pathName = useLocation();
   const [selectedFile, setSelectedFile] = useState(upload);
   const handleFile = (e) => {
     const file = e.target.files[0];
@@ -17,9 +19,11 @@ const Card = (props) => {
   return (
     <div className="lostContainerOuter">
       <div className="lostContainer">
-        <div className="closeIcon" onClick={() => props.updateItemLost()}>
-          <CloseIcon />
-        </div>
+        {pathName === "lost" && (
+          <div className="closeIcon" onClick={() => props.updateItemLost()}>
+            <CloseIcon />
+          </div>
+        )}
         <div className="uploadImg">
           <div></div>
           <img src={selectedFile} alt="logo" width={100} />
