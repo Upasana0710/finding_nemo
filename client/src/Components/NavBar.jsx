@@ -22,14 +22,6 @@ const NavBar = (props) => {
         >
           Lost Something ?
         </div>
-        {/* <div
-          className="color-blue cursor-pointer navItem"
-          onClick={() =>
-            (window.location.href = "mailto:iampriyanshukumar.2003@gmail.com")
-          }
-        >
-          Contact Us
-        </div> */}
         <Tooltip title="Claimed items" arrow>
           <Link to="/claimed" style={{ textDecoration: "none" }}>
             <BookmarkAddedIcon className="color-blue cursor-pointer navItem" />
